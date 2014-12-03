@@ -1,19 +1,23 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
 
-  get 'static_pages/photography'
+  resources "contacts", only: [:new, :create]
 
-  get 'static_pages/about_me'
+  # get 'static_pages/photography'
 
-  get 'static_pages/blog'
+  get 'photography' => 'static_pages#photography'
 
-  get 'static_pages/education'
+  get 'aboutme' => 'static_pages#about_me'
 
-  get 'static_pages/social'
+  get 'blog' => 'static_pages#blog'
 
-  get 'static_pages/yoga'
+  get 'education' => 'static_pages#education'
 
-  get 'static_pages/contact'
+  get 'social' => 'static_pages#social'
+
+  get 'yoga' => 'static_pages#yoga'
+
+  get 'contact' => 'contacts#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
