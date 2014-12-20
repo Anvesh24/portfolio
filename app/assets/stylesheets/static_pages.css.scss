@@ -4,10 +4,70 @@
 
 
 .pagelinks{
-  float: right;
-  height: 100%;
+  text-align: center;
   font-family: 'Indie Flower', cursive;
   font-size: 2em;
   list-style: none;
-  margin-top: 10vh;
+  margin-top: 5vh;
+  margin-left: 1px solid #F5EAD5;
+  max-height: 80vh;
+  position: fixed;
 }
+
+.pagelinks>li>a:hover{
+  color: #e74c3c;
+}
+
+
+// div.nobody::first-letter {
+//   color: #e74c3c;
+//   font-size: 300%
+// }
+
+.nobody{
+  font-size: 4em;
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+}
+
+.nobodybody{
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  margin-top: 0px;
+}
+
+.anybody{
+  font-size: 2em;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+
+
+//photography
+
+.pic_content {
+    background-color: #F7FAFA;
+    border-radius: 1%;
+    margin-bottom: 3px;
+
+    .pic {
+      margin: auto;
+      width: 88%;
+      padding: 10px;
+    }
+    .pic_message {
+      padding: 5px 7px 7px 12px;
+      font-size: 15px;
+      font-weight: 300;
+      
+    }
+  }
+
+  .coming{
+    margin-top: 40px;
+    font-size: 3em;
+    text-align: center;
+  }

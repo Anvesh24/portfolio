@@ -83,7 +83,20 @@ a:hover{
 footer{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
-	position: absolute;
-	right: 10px;
+	padding-right: 10px;
+	clear: both;
+	border: 1px solid rgb(233, 217, 217);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
 }
+
+
+body{
+	position: relative;
+	min-height: 100vh;
+}
+
 
